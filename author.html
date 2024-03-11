@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <!-- Basic -->
+
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="shortcut icon" href="images/icon.png" alt="Denver Nuggets Logo"/>
+  <link rel="shortcut icon" href="images/icon.png" alt="Troweld logo"/>
+
   <!-- Mobile Metas -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
   <!-- Site Metas -->
-  <meta name="keywords" content="welding, services, machine, car, gate, troweld" />
-  <meta name="description" content="Website of Troweld, welding company offering various welding services" />
+
+  <meta name="keywords" content="welding, services, machine, savic, aleksa, troweld" />
+  <meta name="description" content="About the auhor of Troweld welding services web page" />
   <meta name="author" content="Aleksa Savic" />
   <meta name="copyright" content="Aleksa Savic 2024"/>
   <meta name="language" content="english"/>
@@ -32,10 +38,11 @@
   
   <link href="css/style.css" rel="stylesheet" />
 
+  <!-- Swiper jquery plugin css -->
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
 </head>
-
 <body>
   <div class="load-screen position-fixed d-flex justify-content-center align-items-center">
     <span></span>
@@ -43,27 +50,6 @@
   <button id="back">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
-  <div id="modal1" class="modal">
-    <div class="modal-content p-3 col-lg-6 col-md-8 col-sm-11 col-11 mx-auto">
-      <span class="closet" id="modal1-close" onClick="closeModal(event)">X</span>
-      <h3 class="mx-auto">Subscribe to our newsletter</h3>
-      <form action="#" method="GET">
-        <label for="subscribe" class="mt-5">Enter your email:</label>
-        <input type="text" id="subscribe" class="form-control mb-5" placeholder="ex: jonjonson@example.uk"/>
-      </form>
-    </div>
-  </div>
-  <div id="modal2" class="modal">
-    <div class="modal-content p-3 col-lg-6 col-md-8 col-sm-11 col-11 mx-auto">
-      <span class="closet" id="modal2-close" onClick="closeModal(event)">X</span>
-      <h3 class="mx-auto">Author</h3>
-      <img class="mx-auto mt-4" src="images/author.jpg" alt="author"/>
-      <p class="mx-auto mt-3">Aleksa Savić 5/22</p>
-    </div>
-  </div>
-  <div class="hero_area">
-    <span class="arrow arrow-left fw-bold" onClick="prevSlide(-1)"><i class="fa-solid fa-less-than"></i></span>
-    <span class="arrow arrow-right fw-bold" onClick="nextSlide(1)"><i class="fa-solid fa-greater-than"></i></span>
     <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
@@ -76,8 +62,21 @@
         </nav>
       </div>
     </header>
-</div>
-<section class="info_section">
+    <!-- end header section -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <figure class="mx-auto">
+          <img class="author" src="images/author.jpg" alt="Author"/>
+          <figcaption class="text-center mt-1">Aleksa Savić 5/22</figcaption>
+        </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- info section -->
+
+  <section class="info_section">
     <div class="info_container">
       <div class="container">
         <div class="info_logo">
@@ -110,10 +109,10 @@
               <h5>
                 Subscribe to our newsletter
               </h5>
-              <div class="info_form ">
-                <form action="#" method="GET">
-                  <input type="email" placeholder="Enter Your Email" />
-                  <button>
+              <div class="info_form">
+                <form action="provera.php" method="GET" id="footer-parent" class="flex-wrap" onsubmit="check(event)">
+                  <input type="text" id="footer" placeholder="Enter Your Email" />
+                  <button type="submit" class="text-center">
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                   </button>
                 </form>
@@ -137,6 +136,7 @@
   <!-- end info section -->
 
   <!-- footer section -->
+
   <footer class="footer_section">
     <div class="container">
       <p>
@@ -144,16 +144,24 @@
       </p>
     </div>
   </footer>
+
   <!-- end footer section -->
+
+  <!-- jquery -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+  <!-- Swiper jquery plugin css -->
+
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+  <!-- Counter jquery plugin css -->
+
   <script src="jquery/counto.min.js"></script>
+
+  <!-- Js -->
 
   <script src="js/main.js" type="text/javascript"></script>
 
 </body>
-
 </html>
